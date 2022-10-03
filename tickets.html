@@ -46,60 +46,89 @@
 
         <div class="precios">
             <div class="container-md">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card2" style="max-width: 100%">
-                            <div class="card-body text-center">
-                                <h5 class="card-title ">Estudiante</h5>
+                <div class="row mb-3" >
+                    <div class="col-sd-6 col-md-4" id="tarjeta1" style="display: flex; justify-content:space-around;">
+  
+                            <div class="card2 text-center border-primary" style="width: 18rem;">
+                                <h5 class="card-title "  style="margin-top: 1.2rem;">Estudiante</h5>
                                 <p class="card-text">Tiene un descuento</p>
                                 <p>80%</p>
                                 <p>* presentar documentación</p>
                             </div>
-                        </div>
+                
                    </div>
-                    <div class="col-md-4">
-                        <div class="card2" style="max-width: 100%">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Trainee</h5>
+                    <div class="col-sd-6 col-md-4" id="tarjeta2" style="display: flex; justify-content:space-around;">
+                     
+                            <div class="card2 text-center border-success"  style="width: 18rem;">
+                                <h5 class="card-title" style="margin-top: 1.2rem;">Trainee</h5>
                                 <p class="card-text">Tiene un descuento</p>
                                 <p>50%</p>
                                 <p>* presentar documentación</p>
                             </div>
                         </div>
-                    </div> 
-                    <div class="col-md-4">
-                    <div class="card2" style="max-width: 100%">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Junior</h5>
+                 
+                    <div class="col-sd-6 col-md-4" id="tarjeta3" style="display: flex; justify-content:space-around;">
+               
+                        <div class="card2 text-center border-warning"  style="width: 18rem;">
+                            <h5 class="card-title"  style="margin-top: 1.2rem;">Junior</h5>
                             <p class="card-text">Tiene un descuento</p>
                             <p>15%</p>
                             <p>* presentar documentación</p>
                         </div>
-                    </div>
+                  
                 </div>
                 </div>
             </div>
         </div>
 
-          <div class="formularios">
+          <div class="formularios2">
                 <p>VENTA</p>
                 <h6>VALOR DE TICKET $200  </h6>
                  <form class="formFinal">
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row mb-3">
+                        <div class="col-sm-6">
                             <input type="text" id="nombre" class="inputPadron" placeholder="Nombre" required >
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                              <input type="text" id="apellido" class="inputPadron" placeholder="Apellido" required >
                         </div>
                         
                     </div>
-                   <br>
-                    <textarea name="" id="comentario" cols="100" rows="10" style="height: 100%;" placeholder="¿Sobre qué quieres hablar?" ></textarea>
-                    <p>Recuerda incluir un titulo para tu charla.</p>
-                    <input type="submit" name="Borrar" class="botonticket">
-                    <input type="submit" name="Resumen" class="botonticket">
+                    <br>
+                    <div class="mb-3">
+                      
+                        <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+                      </div>
+                    <br>
 
+                    <div class="row mb-3">
+                        <div class="col-sm-6">
+                        <label for="form-select">Cantidad</label>
+                          <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+                        </div>
+                      
+                        <div class="col-sm-6">
+                            <label for="form-select">Categoria</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Estudiante</option>
+                                <option value="1">Treinee</option>
+                                <option value="2">Junior</option>
+                              </select>
+                        </div>
+                      </div>
+
+                   
+                   <br>
+                   <div class="alert alert-primary" role="alert">
+                    Total a pagar: $ 0
+                  </div>
+                  <br>
+                    
+                    <div class="contenedorBotonticket">
+                        <input type="button" value="Borrar" class="botonticket">
+                        <input type="button" value="Registrar" class="botonticket">
+                    </div>
+                  
                 </form>
           </div>
     </main>

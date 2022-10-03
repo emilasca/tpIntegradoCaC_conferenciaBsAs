@@ -245,14 +245,14 @@ main{
     background: white;
     color:black;
 }
-.formularios{
+.formularios, .formularios2{
     margin: 30px 100px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-color: grey;
 }
-.formularios p{
+.formularios p, .formularios2 p{
     margin: 0px;
 }
 h6{
@@ -357,6 +357,11 @@ footer{
     color: white;
 }
 
+.confT:hover{
+    color: white;
+}
+
+
 .foot a:hover{
 
     color: white;
@@ -370,10 +375,28 @@ footer{
     width: 292px;
     height: 170px;
 }
-
-.card2 :first-child{
-    border-color: #0d6efd!important;
+.contenedorBotonticket{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
+
+.botonticket{
+    background-color: #198754;
+    border-color: #198754;
+    width: 49%;
+    color: white;
+    border-style: solid;
+    border-radius: 3px;
+    height: 40px;
+}
+
+.botonticket:hover{
+    background-color: #156b43;
+    border-color: #156b43;
+}
+
+
 
 @media screen and (max-width:1020px) {
     .topNav{
@@ -450,7 +473,9 @@ footer{
     .formularios{
         margin: 30px 50px 200px;
     }
-
+    .formularios2{
+        margin: 30px 50px 300px;
+    }
     .foot{
         display: block;
         height: auto;
@@ -491,11 +516,12 @@ footer{
     .formularios{
         margin: 30px 10px 200px;
     }
-
+    .formularios2{
+        height: auto;
+        margin: 30px 10px 400px;
+    }
     .tarjeta{
         margin: 0 2%;
-        
-
         }
         
 
