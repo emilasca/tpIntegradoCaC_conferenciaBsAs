@@ -102,6 +102,12 @@ main{
    
 }
 
+.main-ticket{
+
+    margin: 5% 15% 0;
+}
+
+
 .divImagenCentro{
     z-index: 1;
     width: 100%;
@@ -180,6 +186,8 @@ main{
 .botonVerde:hover{
     background-color: #14633e;
 }
+/*TENGO QUE HACER UN LINK, Y AL LINK, HACERLO BOTON, ENCERRARLO EN UNA CAJA*/
+
 .precios{
     margin: 30px 100px;
     height: auto;
@@ -227,6 +235,15 @@ main{
     margin-bottom: 16px;
 }
 
+.card-text2{
+    padding: 0;
+}
+
+.porcentaje{
+    font-size: 1.5em;
+    font-weight:600;
+}
+
 #sinFondo{
     width: 109px;
     padding: 6px 12px;
@@ -271,6 +288,57 @@ h6{
    border-radius: 3px;
    border: 1px solid #ced4da;
 
+}
+
+.inputPadron-Nombre{
+    position: relative;
+	width: 50%;
+}
+
+#iconoAdv1{
+	color: red;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 90%;
+    top: 50%;
+	transform: translateY(-50%);
+}
+
+
+#iconoAdv2{
+	color: red;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 23%;
+    top: 74.5%;
+    transform: translateY(-50%);
+}
+
+#iconoAdv3{
+	color: red;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 23%;
+    top: 83%;
+	transform: translateY(-50%);
+}
+
+#iconoAdv4{
+	color: red;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 45%;
+	bottom: 1.75%;
+	transform: translateY(-50%);
+}
+.inputPadron:focus{
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
 #comentario{
@@ -357,9 +425,12 @@ footer{
     color: white;
 }
 
+
 .confT:hover{
-    color: white;
+
+    color: rgb(155, 155, 155);
 }
+
 
 
 .foot a:hover{
@@ -373,30 +444,88 @@ footer{
     border-style: solid;
     border-radius: 5px;
     width: 292px;
-    height: 170px;
+    height: auto;
 }
-.contenedorBotonticket{
+
+.card2 p{
+    padding-bottom: 0.5em;
+   
+}
+.contenedorBtn{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
+
 .botonticket{
-    background-color: #198754;
-    border-color: #198754;
     width: 49%;
+}
+
+.botonEnviar{
+    width: 100%;
+}
+
+.botonEnviar, .botonticket{
+    
+    margin-top: 20px;
+    background-color: #98ca50;
+    border-color:#98ca50;
+    border: 1.2px;
+    border-radius: 7px;
     color: white;
-    border-style: solid;
-    border-radius: 3px;
-    height: 40px;
-}
-
-.botonticket:hover{
-    background-color: #156b43;
-    border-color: #156b43;
+    padding: 6px 12px;
+    font-size: 1.25em;
+   
 }
 
 
+
+.alert{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.botonEnviar:hover,.botonticket:hover{
+    background-color: #719b38;
+    border-color:#719b38;
+}
+
+
+
+.card-title2{
+    font-size: 1.5em;
+    font-weight:400;
+    color: white;
+    height: 2.5em;
+    padding: 0.5em;
+}
+.pri{
+    border-color:#2e8b52;
+}
+.pri .card-title2{
+    background: #2e8b52;
+}
+
+.se {
+    border-color: #b92db2;
+}
+.se .card-title2{
+    background: #b92db2;
+}
+
+.ter{
+    border-color: #fdc733;
+}
+.ter .card-title2{
+    background: #fdc733;
+}
+
+#saldo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 @media screen and (max-width:1020px) {
     .topNav{
@@ -506,6 +635,8 @@ footer{
 }
 
 
+
+
 @media screen and (max-width:571px) 
 {
     .oradores, .precios{
@@ -526,3 +657,5 @@ footer{
         
 
 }
+
+

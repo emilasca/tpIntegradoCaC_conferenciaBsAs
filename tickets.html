@@ -40,7 +40,7 @@
     </header>
 
 
-    <main>
+    <main class="main-ticket">
 
 
 
@@ -49,30 +49,30 @@
                 <div class="row mb-3" >
                     <div class="col-sd-6 col-md-4" id="tarjeta1" style="display: flex; justify-content:space-around;">
   
-                            <div class="card2 text-center border-primary" style="width: 18rem;">
-                                <h5 class="card-title "  style="margin-top: 1.2rem;">Estudiante</h5>
-                                <p class="card-text">Tiene un descuento</p>
-                                <p>80%</p>
+                            <div class="card2 pri text-center" style="width: 18rem;">
+                                <h5 class="card-title2">Estudiante</h5>
+                                <p class="card-text2">Tiene un descuento</p>
+                                <p class="porcentaje">80%</p>
                                 <p>* presentar documentación</p>
                             </div>
                 
                    </div>
                     <div class="col-sd-6 col-md-4" id="tarjeta2" style="display: flex; justify-content:space-around;">
                      
-                            <div class="card2 text-center border-success"  style="width: 18rem;">
-                                <h5 class="card-title" style="margin-top: 1.2rem;">Trainee</h5>
-                                <p class="card-text">Tiene un descuento</p>
-                                <p>50%</p>
+                            <div class="card2 se text-center"  style="width: 18rem;">
+                                <h5 class="card-title2">Trainee</h5>
+                                <p class="card-text2">Tiene un descuento</p>
+                                <p class="porcentaje">50%</p>
                                 <p>* presentar documentación</p>
                             </div>
                         </div>
                  
                     <div class="col-sd-6 col-md-4" id="tarjeta3" style="display: flex; justify-content:space-around;">
                
-                        <div class="card2 text-center border-warning"  style="width: 18rem;">
-                            <h5 class="card-title"  style="margin-top: 1.2rem;">Junior</h5>
-                            <p class="card-text">Tiene un descuento</p>
-                            <p>15%</p>
+                        <div class="card2 ter text-center"  style="width: 18rem;">
+                            <h5 class="card-title2">Junior</h5>
+                            <p class="card-text2">Tiene un descuento</p>
+                            <p class="porcentaje">15%</p>
                             <p>* presentar documentación</p>
                         </div>
                   
@@ -86,47 +86,65 @@
                 <h6>VALOR DE TICKET $200  </h6>
                  <form class="formFinal">
                     <div class="row mb-3">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 inputPadron-Nombre">
                             <input type="text" id="nombre" class="inputPadron" placeholder="Nombre" required >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle inputPadron-icon" viewBox="0 0 16 16" id="iconoAdv1">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                            </svg>
                         </div>
                         <div class="col-sm-6">
                              <input type="text" id="apellido" class="inputPadron" placeholder="Apellido" required >
+                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle inputPadron-icon" viewBox="0 0 16 16" id="iconoAdv2">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                            </svg>
                         </div>
                         
                     </div>
-                    <br>
+                    
                     <div class="mb-3">
                       
-                        <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="correo" placeholder="name@example.com"    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle inputPadron-icon" viewBox="0 0 16 16" id="iconoAdv3">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                        </svg>
                       </div>
-                    <br>
+                   
 
                     <div class="row mb-3">
                         <div class="col-sm-6">
                         <label for="form-select">Cantidad</label>
-                          <input type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+                          <input id="cantidades" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"  min="1" pattern="^[0-9]+" required>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle inputPadron-icon" viewBox="0 0 16 16" id="iconoAdv4">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                        </svg>
                         </div>
                       
                         <div class="col-sm-6">
                             <label for="form-select">Categoria</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Estudiante</option>
-                                <option value="1">Treinee</option>
-                                <option value="2">Junior</option>
+                            <select id="choise" class="form-select" aria-label="Default select example" required>
+                                <option selected>-- Seleccione --</option>
+                                <option class="cat" value="1">Sin Categoria</option>
+                                <option class="cat" value="2">Estudiante</option>
+                                <option class="cat" value="3">Treinee</option>
+                                <option class="cat" value="4">Junior</option>
                               </select>
                         </div>
                       </div>
 
                    
-                   <br>
+                   
                    <div class="alert alert-primary" role="alert">
-                    Total a pagar: $ 0
-                  </div>
-                  <br>
+                    Total a pagar: $  <p  id="saldo"> </p>
+                    </div>
+                  
                     
-                    <div class="contenedorBotonticket">
-                        <input type="button" value="Borrar" class="botonticket">
-                        <input type="button" value="Registrar" class="botonticket">
+                    <div class="contenedorBtn">
+                        <input type="button" value="Borrar" class="botonticket" id="brr">
+                        <input type="button" value="Resumen" class="botonticket" id="resum">
                     </div>
                   
                 </form>
@@ -147,5 +165,208 @@
             </ul>
         </div>
     </footer>
+
+
+    <script>
+
+         //   function borrarAdv(){
+         //       icono1.style.visibility ="hidden";
+         //   }
+     
+            function resumenes(){
+
+            var nbr1=document.getElementById("nombre");
+            var nbr=document.getElementById("nombre").value;
+            var ape1=document.getElementById("apellido");
+            var ape=document.getElementById("apellido").value;
+            var mail1= document.getElementById("correo");
+            var mail= document.getElementById("correo").value;
+            var can1= document.getElementById("cantidades");
+            var can= document.getElementById("cantidades").value;
+            //choise devuelve un string
+            var eleccion1=parseInt(document.getElementById("choise"));
+            var eleccion=parseInt(document.getElementById("choise").value);
+
+
+            
+
+
+            var b=0;
+
+            switch(eleccion)
+                { 
+                case(1):
+                    b=200;
+                    break;
+
+                case(2):
+                
+                    b=40;
+                    break;
+                
+                case(3):
+                
+                    b=100;
+                    break;
+                
+                case(4):
+                
+                    b=170;
+                    break;
+                
+                default:
+                    b=0;
+                   
+                }
+           
+            
+            if(nbr.length==0)
+            {
+                alert("Por favor escriba su Nombre");
+                nbr1.focus();
+                nbr1.style.borderColor = "red";
+                nbr1.style.boxShadow ="0 0 0 0.25rem rgba(253, 13, 13, 0.25)";
+                icono1.style.visibility ="visible";
+              //  nbr1.addEventListener('keypress', borrarAdv);
+              // if(nbr.length!=0)
+               // {
+                 //   icono1.style.visibility ="hidden";
+                //}
+            }
+            
+           
+            
+            if (nbr.length!=0 && ape.length==0)
+            {
+                nbr1.style.boxShadow ="";   
+                icono1.style.visibility ="hidden"; 
+                nbr1.style.borderColor = "#ced4da";        
+                alert("Por favor escriba su Apellido");
+                icono2.style.visibility ="visible";
+                ape1.style.borderColor = "red";
+                ape1.style.boxShadow ="0 0 0 0.25rem rgba(253, 13, 13, 0.25)";
+              //  ape1.addEventListener('keypress', borrarAdv);
+ 
+            }
+            if (nbr.length!=0 && ape.length!=0 && mail.length==0)
+            {
+                icono1.style.visibility ="hidden";
+                icono2.style.visibility ="hidden";
+                nbr1.style.boxShadow ="";    
+                nbr1.style.borderColor = "#ced4da";  
+                ape1.style.boxShadow ="";
+                ape1.style.borderColor = "#ced4da";
+                alert("Por favor escriba su Correo");
+         
+                
+                icono3.style.visibility ="visible";
+                mail1.style.borderColor = "red";
+                mail1.style.boxShadow ="0 0 0 0.25rem rgba(253, 13, 13, 0.25)";
+            }
+            if (nbr.length!=0 && ape.length!=0 && mail.length!=0 && can.length==0 )
+            {
+                icono1.style.visibility ="hidden";
+                icono2.style.visibility ="hidden";
+                icono3.style.visibility ="hidden";
+             
+                nbr1.style.boxShadow ="";    
+                nbr1.style.borderColor = "#ced4da";  
+                ape1.style.boxShadow ="";
+                ape1.style.borderColor = "#ced4da";
+                mail1.style.boxShadow =""; 
+                mail1.style.borderColor = "#ced4da";
+                alert("Por favor seleccione la cantidad de Tickets");
+              
+                icono4.style.visibility ="visible";
+                can1.style.borderColor = "red";
+                can1.style.boxShadow ="0 0 0 0.25rem rgba(253, 13, 13, 0.25)";
+
+            }
+            if (nbr.length!=0 && ape.length!=0 && mail.length!=0 && can.length!=0 && !(eleccion==1 || eleccion==2 ||  eleccion==3 ||  eleccion==4) )
+            {
+                icono1.style.visibility ="hidden";
+                icono2.style.visibility ="hidden";
+                icono3.style.visibility ="hidden";
+                icono4.style.visibility ="hidden";
+              
+             
+                nbr1.style.boxShadow ="";    
+                nbr1.style.borderColor = "#ced4da";  
+                ape1.style.boxShadow ="";
+                ape1.style.borderColor = "#ced4da";
+                mail1.style.boxShadow =""; 
+                mail1.style.borderColor = "#ced4da";
+                can1.style.boxShadow ="";  
+                can1.style.borderColor = "#ced4da";
+                alert("Por favor seleccione la Categoría");
+                document.getElementById("saldo").innerHTML= " ";
+              //  eleccion1.style.borderColor = "red";
+              //  eleccion1.style.boxShadow ="0 0 0 0.25rem rgba(253, 13, 13, 0.25)";
+            }
+
+            if(nbr.length!=0 && ape.length!=0 && mail.length!=0 && can.length!=0 && (eleccion==1 || eleccion==2 ||  eleccion==3 ||  eleccion==4)) 
+            {
+                icono1.style.visibility ="hidden";
+                icono2.style.visibility ="hidden";
+                icono3.style.visibility ="hidden";
+                icono4.style.visibility ="hidden";
+              
+             
+                nbr1.style.boxShadow ="";    
+                nbr1.style.borderColor = "#ced4da";  
+                ape1.style.boxShadow ="";
+                ape1.style.borderColor = "#ced4da";
+                mail1.style.boxShadow =""; 
+                mail1.style.borderColor = "#ced4da";
+                can1.style.boxShadow ="";  
+                can1.style.borderColor = "#ced4da";   
+            
+                var multi=can*b;
+                document.getElementById("saldo").innerHTML= " "+ multi;
+            }
+        }
+
+        function borrar(){
+            document.getElementById("nombre").value="";
+            document.getElementById("apellido").value="";
+            document.getElementById("correo").value="";
+            document.getElementById("cantidades").value="";
+            document.getElementById("choise").value="-- Seleccione --";
+            document.getElementById("saldo").innerHTML="  ";
+        }
+
+        var icono1= document.getElementById("iconoAdv1");
+        var icono2= document.getElementById("iconoAdv2");
+        var icono3= document.getElementById("iconoAdv3");
+        var icono4= document.getElementById("iconoAdv4");
+        icono1.style.visibility = "hidden";
+        icono2.style.visibility = "hidden";
+        icono3.style.visibility = "hidden";
+        icono4.style.visibility = "hidden";
+
+        const botoncito= document.getElementById("resum")
+        botoncito.addEventListener("click",resumenes);
+        
+        const btnBorrar= document.getElementById("brr")
+        btnBorrar.addEventListener("click",borrar);
+
+       
+ 
+        /*
+         document.addEventListener('DOMContentLoaded', function(){
+            let inp = document.getElementsByClassName('inputPadron');
+/*             let formulario = document.getElementById('formularios2');
+            let formulario = document.getElementById('formularios2');
+            let formulario = document.getElementById('formularios2'); */
+            /*
+            inp.addEventListener('submit', function() {
+                inp.reset();
+            });
+         });*/
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
+
