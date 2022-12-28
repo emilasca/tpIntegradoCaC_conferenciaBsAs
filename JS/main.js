@@ -124,8 +124,7 @@
                     can1.style.borderColor = "#ced4da";
                     alert("Por favor seleccione la Categoría");
                     document.getElementById("saldo").innerHTML= " ";
-                  //  eleccion1.style.borderColor = "red";
-                  //  eleccion1.style.boxShadow ="0 0 0 0.25rem rgba(253, 13, 13, 0.25)";
+                 
                 }
     
                 if(nbr.length!=0 && ape.length!=0 && mail.length!=0 && can.length!=0 && (eleccion==1 || eleccion==2 ||  eleccion==3 ||  eleccion==4)) 
